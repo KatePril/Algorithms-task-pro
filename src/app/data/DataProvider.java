@@ -3,9 +3,9 @@ package app.data;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataProvider {
-
-    public List<Product> getData() {
+public final class DataProvider {
+//Змінила на статичний клас аби не створювати зайві об'єкти
+    public static List<Product> getData() {
         List<Product> list = new ArrayList<>();
         list.add(new Product("apple", 1.29));
         list.add(new Product("plum", 1.79));

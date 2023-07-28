@@ -1,21 +1,7 @@
 package app.data;
 
 
-public class Product {
-
-    private final String name;
-    private final double price;
-
-    public Product(String name, double price) {
-        this.name = name;
-        this.price = price;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
-        return price;
-    }
+public record Product(String name, double price) {
+    //вирішила замінити на record.
+    //Виправлені в цьому класі помилки є в комміті Fix mistakes
 }
