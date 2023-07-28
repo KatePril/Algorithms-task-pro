@@ -12,10 +12,11 @@ public class App {
 
     public static void main(String[] args) {
         double priceSearch = getSearchValue();
+
         List<Product> list = DataProvider.getData();
         getOutput(list);
-        DataService service = new DataService();
-        int index = service.search(list, priceSearch);
+
+        int index = DataService.search(list, priceSearch);
         getOutput(list, priceSearch, index);
     }
 
